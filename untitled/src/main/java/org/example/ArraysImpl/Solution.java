@@ -1,4 +1,4 @@
-package org.example;
+package org.example.ArraysImpl;
 import java.util.*;
 
 class Result {
