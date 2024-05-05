@@ -25,17 +25,26 @@ public class ArrayMergeSortedDemo {
 
         arr3 = new int[m1 + m2];
         while (i < m1 && j < m2) {
+
+            System.out.println("En el while");
             if (arr1[i] < arr2[j]) {
                 arr3[k] = arr1[i];
+                System.out.println("if 1: "+arr3[k]);
+                System.out.println("j "+j +" k "+k);
+
                 k++;
                 i++;
             } else if (arr2[j] < arr1[i]) {
                 arr3[k] = arr2[j];
+                System.out.println("if 2: "+arr3[k]);
+                System.out.println("i "+i +" k "+k);
                 j++;
                 k++;
 
             } else {
                 arr3[k] = arr1[i];
+                System.out.println("if s: "+arr3[k]);
+                System.out.println("i "+i +" k "+k+" j "+j);
                 k++;
                 i++;
                 arr3[k] = arr2[j];
@@ -44,7 +53,6 @@ public class ArrayMergeSortedDemo {
             }
 
         } // End of while loop
-
         while (i < m1) {
             arr3[k] = arr1[i];
             k++;
