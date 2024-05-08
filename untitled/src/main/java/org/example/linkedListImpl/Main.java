@@ -5,8 +5,7 @@ public class Main {
         LinkedList node = new LinkedList();
         node.insert(5);
         node.insert(9);
-        node.insert(12);
-
+        node.insertBeginning(3);
         node.print();
 
     }

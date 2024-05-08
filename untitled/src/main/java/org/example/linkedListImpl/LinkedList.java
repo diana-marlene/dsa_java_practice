@@ -20,6 +20,15 @@ public class LinkedList {
 
     }
 
+    public void insertBeginning( int data){
+        Node node = new Node();
+        node.data = data;
+        node.next = head; // update the next reference of the new node
+        head = node; // update the head reference
+
+
+    }
+
     public void print(){
 
         Node node = head;  // put reference
@@ -30,5 +39,7 @@ public class LinkedList {
         }
         System.out.println(node.data); // the last node (next reference is null)
     }
+
+
 
 }
